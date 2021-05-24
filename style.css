@@ -1,0 +1,324 @@
+/*!
+Theme Name: footballCards
+Theme URI: Tony Andrews
+Author: Tony Andrews
+Author URI: Tony Andrews
+Description: Modified Underscores theme
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: footballcards
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+footballCards is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+
+
+/* Theme Specific Styles */
+
+html {
+	font-family: 'Rubik', sans-serif;
+}
+
+.siteheader {
+    height: 100px;
+    width: auto;
+}
+
+/*Landing page styling*/
+
+/* Vikings Cards Home Page */
+
+.vikings-cards-main {
+	display: flex;
+	flex-direction: column;
+	background-image: url('usbank.jpg');
+	background-size: cover;
+	background-position: center;
+	width: auto;
+	height: 500px;
+	border-top: 3px solid white;
+}
+
+.vikings-cards-main-landing {
+	color: white;
+	align-self: center;
+	margin-top: 100px;
+	background: rgba(0, 0, 0,0.6);
+	padding: 20px 30px;
+	border-radius: 20px;
+}
+
+.vikings-cards-main-teamname {
+	font-size: 3em;
+	font-weight: 700;
+	text-align: center;
+}
+
+.vikings-cards-main-subtext {
+	text-align: center;
+	font-size: 1.5em;
+	color: #ffb300;
+	margin-top: 5px;
+}
+.vikings-cards-main-subtext-2 {
+	text-align: center;
+	font-size: 1em;
+	color: #ffb300;
+	margin-top: 5px;
+}
+
+.main-button {
+	color: #ffb300;
+	background-color: #482782;
+	border: 1px solid #ffb300;
+	margin-top:20px;
+	padding: 4px 20px;
+	border-radius: 5px;
+	font-size: 1em;
+}
+
+/* Vikings Purple #482782 */
+/* Vikings Gold #C99215 */
+
+.topnav {
+	display: flex;
+	align-items:center;
+	justify-content: space-between;
+	flex-basis: 100%;
+    color:#c99215;
+    background-color: #482782;
+	height: 100px;
+}
+
+.logo {
+    border-radius: 50%;
+    height: 100px;
+    border: 3px solid #482782;
+    margin-left: 20px;
+    margin-bottom: -15px;
+    box-shadow: 0px 0px 20px black;
+}
+
+#homelink {
+	color: #c99215;
+	text-decoration: none;
+	margin-right: 50px;
+}
+
+#title {
+    font-size: 2em;
+    margin-left: 200px;
+}
+
+#description {
+	margin-right: 50px;
+}
+
+.card-main {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 50px;
+}
+
+.card-images {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 175px;
+	border-right: 4px solid #c99215;
+	padding-top: 20px;
+}
+
+.card-img {
+	width: 100px;
+	padding: 10px;
+	filter: drop-shadow(2px 4px 6px black);
+}
+
+.card-content {
+	flex-grow: 1;
+	padding-left:10px;
+}
+
+.card-title {
+	flex-grow: 1;
+    margin-left: -10px;
+    margin-top: 0;
+    border-top: 3px solid #c99215;
+    color: white;
+    padding-left: 10px;
+    background-color: #482782;
+    padding: 10px 10px 10px 10px;
+	font-size: 1.2em;
+}
+
+.card-detail {
+	padding: 4px 4px;
+    background-color: #E6E6FA;
+    border-bottom: 1px solid white;
+}
+
+.card-detail-heading {
+	display:inline-block;
+	font-weight: bold;
+	width: 100px;
+
+}
+
+.nav-links {
+	display: flex;
+	justify-content: space-between;
+}
+
+.site-info {
+	margin-top: 0;
+    border-top: 3px solid #c99215;
+    color: white;
+    padding-left: 10px;
+    background-color: #482782;
+    padding: 10px 10px 10px 10px;
+	font-size: .9em;
+}
+
+.site-info a {
+	color: white;
+}
+
+
+/* Main Search Page Styles */
+
+.card-search-form {
+	display: flex;
+	margin-bottom: 10px;
+	margin-top: 15px;
+}
+
+.card-search-input {
+	padding-left: 10px;
+	font-size: 1em;
+}
+
+.card-search-input label {
+	color: #8867c2
+}
+
+.card-search-input select input {
+	border-radius: 2px;
+}
+
+.card-search-submit {
+	padding-left:10px;
+}
+
+.card-search-submit button {
+	color: white;
+	background-color: #482782;
+	border-color: #482782;
+}
+
+
+.card-result-title {
+	background-color: #482782;
+	padding-top:10px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	height:2em;
+	margin-top:4px;
+	width:100%;
+	font-size: .8em;
+	white-space: nowrap;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+}
+
+.card-result-title a {
+	color: white;
+	text-decoration: none;
+	padding-left: 10px;
+}
+
+.card-result-title a:hover {
+	color: #c99215;
+}
+
+.card-meta-container {
+	display: flex;
+	flex-direction: row;
+	padding:4px;
+	font-size: .8em;
+	background-color: #E6E6FA;
+	border: 1px solid #482782;
+
+}
+
+.card-meta-image {
+	flex-basis: 30px;
+}
+
+.card-meta-noimage {
+	flex-basis: 30px;
+	opacity: .2;
+}
+
+.card-meta-year {
+	flex-basis: 50px;
+	font-weight: bold;
+}
+
+.card-meta-brand {
+	flex-basis: 220px;
+}
+
+.card-meta-team {
+	flex-basis: 75px;
+}
+
+.card-meta-number {
+	flex-basis: 60px;
+}
+
+.card-meta-name {
+	flex-basis: fill;
+}
+
+.card-pagination {
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+
+
+@media (max-width: 580px) {
+	#title {
+		display: none;
+	}
+
+	#description {
+		display: none;
+	}
+	
+	.card-images {
+		width:100px;
+	}
+
+	.card-img {
+		width:50px;
+	}
+	.card-meta-brand {
+		display: none;
+	}
+	.card-meta-number {
+		display: none;
+	}
+}
